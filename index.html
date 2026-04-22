@@ -1079,8 +1079,7 @@ let filteredUsers = Object.keys(users).filter(u => {
 
 // 🚫 IF NONE → SHOW EMPTY CARD
 if(filteredUsers.length === 0){
-    document.getElementById("userControlList").innerHTML =
-        "<div class='card' style='text-align:center; color:gray;'>No users with warnings or restrictions</div>";
+    document.getElementById("userControlList").innerHTML = "";
     return;
 }
 
